@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { ArrowLink } from "@/components/Icons"
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import profilePic from "../../public/images/profile/ian_mult_hats.png"
+import profilePic from "../../public/images/profile/profile.png"
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import TransitionEffect from '@/components/TransitionEffect'
@@ -11,7 +11,7 @@ export default function Home() {
   const title = "Ian Riera Smolinska | Computer Vision Engineer";
   const description = "Computer Vision Engineer building AI products across 3D reconstruction, tracking, and applied machine learning.";
   const url = "https://ianriera.github.io/";
-  const image = "https://ianriera.github.io/images/profile/ian_mult_hats.png";
+  const image = "https://ianriera.github.io/images/profile/profile.png";
 
   return (
     <>
