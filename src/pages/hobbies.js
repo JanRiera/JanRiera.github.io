@@ -1,106 +1,80 @@
-import { useRef } from "react";
 import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import Link from "next/link";
 import Image from "next/image";
-import article1 from "../../public/images/projects/museum_painting_retrieval.png";
-import { motion, useMotionValue } from "framer-motion";
+import amgHubImage from "../../public/images/hobbies/AMG_PL_HUB.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
-
+import { motion } from "framer-motion";
 const FramerImage = motion(Image);
+const hobbies = [
+    {
+        id: "mamansi",
+        time: "2020-Present",
+        title: "Mamansi Basketball Team",
+        description: "Amateur basketball team I play in and managed between 2020 and 2025. Currently still playing but not managing.",
+        mediaType: "video",
+        mediaSrc: "/images/hobbies/mamansi.mp4",
+    },
+    {
+        id: "300",
+        time: "2021-Present",
+        title: "300 Basketball Team",
+        description: "Amateur basketball team I play in and manage since 2021.",
+        mediaType: "video",
+        mediaSrc: "/images/hobbies/300.mp4",
+    },
+    {
+        id: "amg_hub",
+        time: "2025-Present",
+        title: "AMG Hub",
+        description: "In 2025, I began managing an AMG enthusiasts hub in Barcelona, where I organize events and community meetups." +
+            " The hub operates within the AMG Private Lounge ecosystem but is not legally affiliated with or operated by Mercedes-Benz.",
+        mediaType: "image",
+        mediaSrc: amgHubImage,
+    },
+];
 
-const FeaturedArticle = ({ img, title, summary, time, link }) => {
+const HobbyCard = ({ title, description, mediaType, mediaSrc }) => {
     return (
-
-        <li className="relative col-span-1 w-full p-4 bg-light border 
-        border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
-            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
-                rounded-br-3xl dark:bg-light"/>
-            <Link
-                href={link}
-                target={"_blank"}
-                rel="noopener noreferrer"
-                className="w-full inline-block cursor-pointer overflow-hidden rounded-lg
-                "
-            >
-                <FramerImage src={img} alt={title} className="w-full h-auto "
+        <article className=" w-full flex flex-col items-center justify-center
+        rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl
+        p-6 relative xs:p-4">
+            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
+            rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"></div>
+            {mediaType === "video" ? (
+                <video
+                    className="w-full h-auto rounded-lg object-contain"
+                    autoPlay
+                    loop
+                    muted
+                    preload="auto"
+                    playsInline
+                    sizes="(max-width: 768px) 100vw, (max-height: 1080px) 100vh"
+                >
+                    <source src={mediaSrc} type="video/mp4" />
+                </video>
+            ) : (
+                <FramerImage src={mediaSrc} alt={title} className="w-full h-auto"
                     whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.2 }} 
-                    priority
-                    sizes="(max-width: 768px) 100vw,
-                    (max-width: 1200px) 50vw,
-                    50vw"/>
-
-            </Link>
-            <Link href={link} target={"_blank"} rel="noopener noreferrer">
-                <h2 className="capitalize my-2 mt-4 text-2xl font-bold hover:underline underline-offset-2
-                xs:text-lg">{title}</h2>
-            </Link>
-            <p className="text-sm mb-2">{summary}</p>
-            <span className="text-primary font-semibold dark:text-primaryDark"
-            >{time}</span>
-        </li>
-
-    )
-}
-
-const Article = ({ title, img, date, link }) => {
-    return (
-        <motion.li
-        initial={{y:200}}
-        whileInView={{y:0, transition:{duration:0.5, ease:"easeInOut"}}}
-        viewport={{once:true}}
-        className="relative col-span-1 w-full p-4 py-6 my-4 bg-light flex items-center 
-        border border-solid border-dark rounded-xl justify-between first:mt-0
-        border-r-4 border-b-4 dark:border-light dark:bg-dark
-        sm:flex-col">
-            <MovingImage title={title} img={img} link={link} />
-            <span className="text-primary font-semibold pl-4 dark:text-primaryDark
-            sm:self-start sm:pl-0 xs:text-sm">{date}</span>
-        </motion.li>
-    )
-}
-
-const MovingImage = ({ title, img, link }) => {
-
-    const x = useMotionValue(0);
-    const y = useMotionValue(0);
-    const imageRef = useRef(null);
-
-    function handleMouse(event) {
-        imageRef.current.style.display = "inline-block";
-        x.set(event.pageX);
-        y.set(-10)
-    }
-    function handleMouseLeave(event) {
-        imageRef.current.style.display = "none";
-        x.set(0);
-        y.set(0)
-    }
-
-    return (
-        <Link href={link} target={"_blank"} rel="noopener noreferrer"
-        onMouseMove={handleMouse}
-        onMouseLeave={handleMouseLeave}
-            className="w-full inline-block cursor-pointer overflow-hidden rounded-lg"
-        >
-            <h2 className="capitalize text-xl font-bold hover:underline underline-offset-2">{title}</h2>
-            <FramerImage 
-            style={{x:x, y:y}}
-            initial={{opacity:0}}
-            whileInView={{opacity:1, transition:{duration:0.2}}}
-            ref={imageRef} src={img} alt={title} className="z-10 w-96 h-auto hidden absolute rounded-lg
-            md:!hidden" />
-        </Link>
-    )
-}
+                    transition={{ duration: 0.2 }} />
+            )}
+            <div className="w-full flex flex-col items-start justify-between
+                mt-4">
+                <span className="text-primary dark:text-primaryDark font-medium text-xl
+                    lg:text-lg md:text-base"
+                >{""}</span>
+                <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+                <p className="my-2 font-medium text-dark dark:text-light">{description}</p>
+            </div>
+        </article>
+    );
+};
 
 const Hobbies = () => {
     const title = "Hobbies | Ian Riera";
-    const description = "Hobbies outside of work.";
+    const description = "Basketball teams I capitanize and the car hub I manage.";
     const url = "https://ianriera.github.io/hobbies";
-    const image = "https://ianriera.github.io/images/projects/museum_painting_retrieval.png";
+    const image = "https://ianriera.github.io/images/hobbies/AMG_PL_HUB.jpg";
 
     return (
         <>
@@ -119,30 +93,24 @@ const Hobbies = () => {
                 <meta name="twitter:image" content={image} />
             </Head>
             <TransitionEffect />
-            <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden
+            <main className="p-16 w-full mb-16 flex flex-col items-center justify-center overflow-hidden
             dark:text-light">
                 <Layout className='pt-16'>
-                    <AnimatedText text="Words Can Change The World!" className="mb-16
+                    <AnimatedText text="Out Of Office" className="mb-16
                     lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
-                    <ul className="grid grid-cols-2 gap-16
-                    lg:gap-8 md:grid-cols-1 md:gap-y-16">
-                        <FeaturedArticle
-                            title="Build A Custom Pagination Component In Reactjs From Scratch"
-                            time="5 min read"
-                            img={article1}
-                            link="https://www.codingdeft.com/posts/reactjs-pagination-component/"
-                            summary="Learn how to build a custom pagination component in ReactJS from scratch."
-
-                        />
-                    </ul>
-                    <h2 className="font-bold text-4xl text-center mt-32 my-16">All Articles</h2>
-                    <ul>
-                        <Article
-                            title="Build A Custom Pagination Component In Reactjs From Scratch"
-                            date="June 7, 2023"
-                            link="https://www.codingdeft.com/posts/reactjs-pagination-component/"
-                            img={article1}
-                        />
+                    <ul className="flex w-full flex-col gap-8">
+                        {hobbies.map((hobby) => (
+                            <li key={hobby.id} className="list-none">
+                                <div className="col-span-6 sm:col-span-12">
+                                    <HobbyCard
+                                        title={hobby.title}
+                                        description={hobby.description}
+                                        mediaType={hobby.mediaType}
+                                        mediaSrc={hobby.mediaSrc}
+                                    />
+                                </div>
+                            </li>
+                        ))}
                     </ul>
                 </Layout>
             </main>

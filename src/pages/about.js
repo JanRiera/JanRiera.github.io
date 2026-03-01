@@ -67,10 +67,9 @@ const About = () => {
                             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark
                             dark:bg-light"></div>
                             <Image src={profilePic} alt="IanRiera" className='w-full h-auto rounded-xl'
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 35vw"
                                 priority
-                                sizes="(max-width: 768px) 100vw,
-                                          (max-width: 1200px) 50vw,
-                                          50vw" />
+                            />
                         </div>
                     </div>
                     <Skills />
@@ -79,7 +78,6 @@ const About = () => {
                 </Layout>
             </main>
         </>
-
     )
 };
 

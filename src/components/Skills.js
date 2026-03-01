@@ -82,8 +82,8 @@ const AnimatedColorBar = ({ title, width, color }) => {
 const Skills = () => {
     return (
         <div>
-            <h2 className="font-bold text-8xl mt-64 w-full text-center
-            dark:text-light lg:text-6xl lg:mt-24 md:text-6xl md:mt-20">Skills</h2>
+            <h2 className="font-bold text-8xl mt-10 w-full text-center
+            dark:text-light lg:text-6xl lg:mt-24 md:text-6xl md:mt-10">Skills</h2>
             <AnimatedColorBar title="Python" width={90} color="green" />
             <AnimatedColorBar title="JavaScript" width={70} color="green" />
             <AnimatedColorBar title="C++" width={45} color="green" />
