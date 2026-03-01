@@ -96,10 +96,10 @@ const MovingImage = ({ title, img, link }) => {
     )
 }
 
-const Articles = () => {
-    const title = "Articles | Ian Riera";
-    const description = "Articles and notes on frontend engineering and practical software topics.";
-    const url = "https://ianriera.github.io/articles";
+const Hobbies = () => {
+    const title = "Hobbies | Ian Riera";
+    const description = "Hobbies outside of work.";
+    const url = "https://ianriera.github.io/hobbies";
     const image = "https://ianriera.github.io/images/projects/museum_painting_retrieval.png";
 
     return (
@@ -150,4 +150,4 @@ const Articles = () => {
     );
 };
 
-export default Articles;
+export default Hobbies;
