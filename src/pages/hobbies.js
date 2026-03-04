@@ -43,13 +43,12 @@ const HobbyCard = ({ title, description, mediaType, mediaSrc }) => {
             rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"></div>
             {mediaType === "video" ? (
                 <video
-                    className="w-full h-auto rounded-lg object-contain"
+                    className="max-h-[720px] w-auto rounded-lg"
                     autoPlay
                     loop
                     muted
-                    preload="auto"
+                    preload="metadata"
                     playsInline
-                    sizes="(max-width: 768px) 100vw, (max-height: 1080px) 100vh"
                 >
                     <source src={mediaSrc} type="video/mp4" />
                 </video>
