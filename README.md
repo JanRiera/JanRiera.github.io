@@ -21,13 +21,13 @@ https://youtu.be/Yw7yWHigGKI <br />
 Build the image:
 
 ```bash
-docker build -t ian-portfolio .
+docker build -t jan-portfolio .
 ```
 
 Run the app on `http://localhost:3000`:
 
 ```bash
-docker run --rm -it -p 3000:3000 ian-portfolio
+docker run --rm -it -p 3000:3000 jan-portfolio
 ```
 
 Or with Docker Compose:
@@ -39,5 +39,5 @@ docker compose up --build
 Optional (live-reload with local source mounted):
 
 ```bash
-docker run --rm -it -p 3000:3000 -v "$PWD":/app -v /app/node_modules ian-portfolio
+docker run --rm -it -p 3000:3000 -v "$PWD":/app -v /app/node_modules jan-portfolio
 ```

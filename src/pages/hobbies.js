@@ -87,10 +87,10 @@ const HobbyCard = ({ title, description, mediaType, mediaSrc }) => {
 };
 
 const Hobbies = () => {
-  const title = "Hobbies | Ian Riera";
+  const title = "Hobbies | Jan Riera";
   const description = "Basketball teams I capitanize and the car hub I manage.";
-  const url = "https://ianriera.github.io/hobbies";
-  const image = "https://ianriera.github.io/images/hobbies/AMG_PL_HUB.jpg";
+  const url = "https://janriera.github.io/hobbies";
+  const image = "https://janriera.github.io/images/hobbies/AMG_PL_HUB.jpg";
 
   return (
     <>

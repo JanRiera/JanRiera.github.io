@@ -93,10 +93,10 @@ const Project = ({ title, type, img, summary, link, github }) => {
     )
 }
 const Projects = () => {
-    const title = "Projects | Ian Riera";
+    const title = "Projects | Jan Riera";
     const description = "Selected computer vision and machine learning projects, including 3D reconstruction, tracking, and scene understanding.";
-    const url = "https://ianriera.github.io/projects";
-    const image = "https://ianriera.github.io/images/projects/scene_understanding.png";
+    const url = "https://janriera.github.io/projects";
+    const image = "https://janriera.github.io/images/projects/scene_understanding.png";
 
     return (
         <>
@@ -133,7 +133,7 @@ const Projects = () => {
                                 multi-tracking in a single camera, using faster r-cnn for object detection and the kalman filter
                                 for tracking. Then the solutions is extended to multiple cameras using siamese networks and metric learning."
                                 link="https://arxiv.org/abs/2105.04908"
-                                github="https://github.com/IanRiera/MCV-M6-Video-Traffic-Monitoring"
+                                github="https://github.com/JanRiera/MCV-M6-Video-Traffic-Monitoring"
                                 type=""
                             />
                         </div>
@@ -146,7 +146,7 @@ const Projects = () => {
                                 framework. The evaluation is done both qualitatively and quantitatively
                                 on KITTI-MOTS, MOTSChallenge, Cityscapes and out of context datasets."
                                 link="https://arxiv.org/abs/2105.04905"
-                                github="https://github.com/IanRiera/MCV-M5-Object-Detection-and-Segmentation"
+                                github="https://github.com/JanRiera/MCV-M5-Object-Detection-and-Segmentation"
                                 type=""
                             />
                         </div>
@@ -158,7 +158,7 @@ const Projects = () => {
                                 using the Detectron2 framework. The evaluation is done both qualitatively and quantitatively on
                                 KITTI-MOTS, MOTSChallenge, Cityscapes and out of context datasets."
                                 link="/3D-reconstruction-urban-scenes.pdf"
-                                github="https://github.com/IanRiera/MCV-M4-3D-Vision"
+                                github="https://github.com/JanRiera/MCV-M4-3D-Vision"
                                 type=""
                             />
                         </div>
@@ -170,7 +170,7 @@ const Projects = () => {
                                 of Visual Words classifier using SVM and logistic regression, and deep learning
                                 techniques, such as MLPs and InceptionV3. Finally we designed our own CNN: TinyNet."
                                 link="https://arxiv.org/abs/2105.04895"
-                                github="https://github.com/IanRiera/MCV-M3-Machine-Learning-for-Computer-Vision"
+                                github="https://github.com/JanRiera/MCV-M3-Machine-Learning-for-Computer-Vision"
                                 type=""
                             />
                         </div>
@@ -183,7 +183,7 @@ const Projects = () => {
                                 present different distortions in the images: background, noise, overlapping
                                 text boxes, color corruption and rotation."
                                 link="https://arxiv.org/abs/2105.04891"
-                                github="https://github.com/IanRiera/MCV-M1-Museum-Painting-Retrieval"
+                                github="https://github.com/JanRiera/MCV-M1-Museum-Painting-Retrieval"
                                 type=""
                             />
                         </div>
