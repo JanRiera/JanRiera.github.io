@@ -2,6 +2,6 @@ services:
   portfolio:
     build:
       context: .
-    image: ian-portfolio:local
+    image: jan-portfolio:local
     ports:
       - "3000:3000"

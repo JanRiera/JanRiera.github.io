@@ -8,10 +8,10 @@ import Link from 'next/link'
 import TransitionEffect from '@/components/TransitionEffect'
 
 export default function Home() {
-  const title = "Ian Riera Smolinska | Computer Vision Engineer";
+  const title = "Jan Riera Smolinska | Computer Vision Engineer";
   const description = "Computer Vision Engineer building AI products across 3D reconstruction, tracking, and applied machine learning.";
-  const url = "https://ianriera.github.io/";
-  const image = "https://ianriera.github.io/images/profile/profile.png";
+  const url = "https://janriera.github.io/";
+  const image = "https://janriera.github.io/images/profile/profile.png";
 
   return (
     <>
@@ -35,7 +35,7 @@ export default function Home() {
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
-              <Image src={profilePic} alt="IanRiera" className='w-full
+              <Image src={profilePic} alt="Jan Riera" className='w-full
               h-auto max-w-lg rounded-lg shadow-none transition-shadow duration-300
               ease-in-out hover:shadow-lg hover:shadow-black/30
               md:w-full'
@@ -78,11 +78,11 @@ export default function Home() {
                   download={true}
                 >Resume <ArrowLink className='ml-2' />
                 </Link>
-                <Link href="mailto:ian.riera.smolinska@gmail.com" target={"_blank"} rel="noopener noreferrer"
+                <Link href="mailto:jan.riera.smolinska@gmail.com" target={"_blank"} rel="noopener noreferrer"
                 className='text-lg font-medium capitalize text-dark underline
                 dark:text-light md:text-base'
                 >Contact</Link>
-                <Link href="https://IanRiera.github.io/salty-crackers/v1/" target={"_blank"} rel="noopener noreferrer"
+                <Link href="https://JanRiera.github.io/salty-crackers/v1/" target={"_blank"} rel="noopener noreferrer"
                 className='text-lg font-medium text-dark underline
                 dark:text-light md:text-base'
                 >Salty Crackers</Link>

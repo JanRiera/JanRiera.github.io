@@ -10,10 +10,10 @@ import TransitionEffect from "@/components/TransitionEffect";
 
 
 const About = () => {
-    const title = "About | Ian Riera";
-    const description = "Background, experience, and education of Ian Riera, a Computer Vision Engineer focused on practical AI solutions.";
-    const url = "https://ianriera.github.io/about";
-    const image = "https://ianriera.github.io/images/profile/ian_digital_artwork.png";
+    const title = "About | Jan Riera";
+    const description = "Background, experience, and education of Jan Riera, a Computer Vision Engineer focused on practical AI solutions.";
+    const url = "https://janriera.github.io/about";
+    const image = "https://janriera.github.io/images/profile/jan_digital_artwork.png";
 
     return (
         <>
@@ -43,7 +43,7 @@ const About = () => {
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75
                             dark:text-light/75">Biography</h2>
                             <p className="font-medium">
-                                Hello world, I am Ian. I am a Telecommunications engineer with a strong specialization in Computer Vision and Machine Learning.
+                                Hello world, I am Jan. I am a Telecommunications engineer with a strong specialization in Computer Vision and Machine Learning.
                             </p>
                             <p className="my-4 font-medium">
                                 I am currently working at <a href="https://coatingai.com/" className="underline hover:text-blue-800">CoatingAI AG</a>, a startup that aims to leverage the power of artificial intelligence
@@ -66,7 +66,7 @@ const About = () => {
                     bg-light p-8 dark:bg-dark dark:border-light md:order-1 md:col-span-8">
                             <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark
                             dark:bg-light"></div>
-                            <Image src={profilePic} alt="IanRiera" className='w-full h-auto rounded-xl'
+                            <Image src={profilePic} alt="Jan Riera" className='w-full h-auto rounded-xl'
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 35vw"
                                 priority
                             />

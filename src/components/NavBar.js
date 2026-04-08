@@ -93,21 +93,21 @@ const NavBar = () => {
                         }
 
                     </button>
-                    <motion.a href='https://es.linkedin.com/in/ianrierasmolinska' target={"_blank"} rel="noopener noreferrer"
+                    <motion.a href='https://es.linkedin.com/in/janrierasmolinska' target={"_blank"} rel="noopener noreferrer"
                         aria-label="LinkedIn profile"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mx-3">
                         <LinkedInIcon />
                     </motion.a>
-                    <motion.a href='https://github.com/IanRiera' target={"_blank"} rel="noopener noreferrer"
+                    <motion.a href='https://github.com/JanRiera' target={"_blank"} rel="noopener noreferrer"
                         aria-label="GitHub profile"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mx-3">
                         <GithubIcon />
                     </motion.a>
-                    <motion.a href='mailto:ian.riera.smolinska@gmail.com' target={"_blank"} rel="noopener noreferrer"
+                    <motion.a href='mailto:jan.riera.smolinska@gmail.com' target={"_blank"} rel="noopener noreferrer"
                         aria-label="Send email"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -151,21 +151,21 @@ const NavBar = () => {
                                 }
 
                             </button>
-                            <motion.a href='https://es.linkedin.com/in/ianrierasmolinska' target={"_blank"} rel="noopener noreferrer"
+                            <motion.a href='https://es.linkedin.com/in/janrierasmolinska' target={"_blank"} rel="noopener noreferrer"
                                 aria-label="LinkedIn profile"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className="w-6 mx-3 sm:mx-1">
                                 <LinkedInIcon />
                             </motion.a>
-                            <motion.a href='https://github.com/IanRiera' target={"_blank"} rel="noopener noreferrer"
+                            <motion.a href='https://github.com/JanRiera' target={"_blank"} rel="noopener noreferrer"
                                 aria-label="GitHub profile"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className="w-6 mx-3 bg-light dark:bg-dark rounded-full sm:mx-1">
                                 <GithubIcon />
                             </motion.a>
-                            <motion.a href='mailto:ian.riera.smolinska@gmail.com' target={"_blank"} rel="noopener noreferrer"
+                            <motion.a href='mailto:jan.riera.smolinska@gmail.com' target={"_blank"} rel="noopener noreferrer"
                                 aria-label="Send email"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
