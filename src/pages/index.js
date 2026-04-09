@@ -69,7 +69,7 @@ export default function Home() {
               My approach is pragmatic and systems-oriented: design robust pipelines, optimize computational performance, deploy reliably, and iterate continuously.
               </p>
               <div className='flex items-center self-start mt-2 gap-4 lg:self-center lg:flex-col lg:items-center lg:gap-3'>
-                <Link href="/cv_ian_riera.pdf" target={"_blank"} rel="noopener noreferrer"
+                <Link href="/cv_jan_riera.pdf" target={"_blank"} rel="noopener noreferrer"
                   className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                 hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
                 dark:text-dark dark:bg-light hover:dark:bg-dark
