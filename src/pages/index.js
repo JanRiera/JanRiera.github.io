@@ -82,6 +82,10 @@ export default function Home() {
                 className='text-lg font-medium capitalize text-dark underline
                 dark:text-light md:text-base'
                 >Contact</Link>
+                <Link href=" https://JanRiera.github.io/plate-blur-webapp/v1/" target={"_blank"} rel="noopener noreferrer"
+                className='text-lg font-medium text-dark underline
+                dark:text-light md:text-base'
+                >License Plate Blurring</Link>
                 <Link href="https://JanRiera.github.io/salty-crackers/v1/" target={"_blank"} rel="noopener noreferrer"
                 className='text-lg font-medium text-dark underline
                 dark:text-light md:text-base'
